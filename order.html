@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Coffee Shop</h1>
+    
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./order.html">Order</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <section id="order">
+        <h2>Order Now</h2>
+        <form action="/submit-order" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="coffee">Choose your coffee:</label>
+            <select id="coffee" name="coffee">
+                <option value="espresso">Espresso</option>
+                <option value="americano">Americano</option>
+                <option value="latte">Latte</option>
+                <option value="cappuccino">Cappuccino</option>
+                <option value="mocha">Mocha</option>
+            </select>
+            <br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+            <br>
+            <button type="submit">Order</button>
+        </form>
+    </section>
+
+    <footer>
+        <h2>Contact Us</h2>
+        <p>Email: info@coffeeshop.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </footer>
+</body>
+</html>
